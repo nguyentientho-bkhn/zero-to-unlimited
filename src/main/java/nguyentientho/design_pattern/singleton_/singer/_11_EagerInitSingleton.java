@@ -3,23 +3,20 @@ package nguyentientho.design_pattern.singleton_.singer;
 public class _11_EagerInitSingleton {
     private static final _11_EagerInitSingleton INSTANCE = new _11_EagerInitSingleton();
 
-    private _11_EagerInitSingleton() {}
+//    private _11_EagerInitSingleton() {}
 
     public static _11_EagerInitSingleton getInstance() {
         return INSTANCE;
     }
-
-//    private static final EagerInitSingleton1 EAGER_INIT_SINGLETON_1 = new EagerInitSingleton1();
-//    private static _11_EagerInitSingleton EAGER_INIT_SINGLETON_1;
 //
 //    private _11_EagerInitSingleton() {};
 //
 //    static {
 //        try {
 //            EAGER_INIT_SINGLETON_1 = new _11_EagerInitSingleton();
-//            System.out.println("chạy cùng main");
+//            System.out.println("running same time main method");
 //        } catch (Exception e) {
-//            throw new RuntimeException("Lỗi xảy ra khi khởi tạo đối tượng singleton");
+//            throw new RuntimeException("Error starting create singleton object");
 //        }
 //    }
 //
@@ -28,6 +25,15 @@ public class _11_EagerInitSingleton {
 //    }
 //
 //    public String getString() {
-//        return ("sử dụng reflection");
+//        return ("use reflection");
 //    }
+
+    private static final _11_EagerInitSingleton INSTANCE2 = new _11_EagerInitSingleton();
+
+    public _11_EagerInitSingleton() {
+    }
+    
+    public static _11_EagerInitSingleton getInstance2() {
+        return INSTANCE2;
+    }
 }

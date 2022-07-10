@@ -29,7 +29,7 @@ public class Sort {
 
         Date date = new Date();
         System.out.printf("Ngày giờ hiện tại là %t", date);
-
+exten
         String s = "học lập trình mà không buồn ngủ";
         System.out.printf("IN HOA ---> %S", s);
 
