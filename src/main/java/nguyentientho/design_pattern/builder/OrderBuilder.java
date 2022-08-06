@@ -1,5 +1,7 @@
 package nguyentientho.design_pattern.builder;
 
+import nguyentientho.design_pattern.builder.model.*;
+
 public interface OrderBuilder {
 
     OrderBuilder orderType(OrderType orderType);
@@ -10,6 +12,6 @@ public interface OrderBuilder {
 
     OrderBuilder orderVegetable(VegetableType vegetableType);
 
-    Order build();
+    Product build();
 
 }

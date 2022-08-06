@@ -1,7 +1,7 @@
 package nguyentientho.design_pattern.singleton_.singer;
 
 public class _14_ThreadSafeSingleton {
-    private static volatile _14_ThreadSafeSingleton instance;
+    private static _14_ThreadSafeSingleton instance;
 
     private _14_ThreadSafeSingleton() {}
 

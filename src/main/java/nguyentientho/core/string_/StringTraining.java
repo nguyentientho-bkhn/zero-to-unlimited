@@ -2,10 +2,13 @@ package nguyentientho.core.string_;
 
 import java.util.Random;
 
+import javax.management.monitor.StringMonitor;
 public class StringTraining {
+    
     public static void main(String[] args) {
-//        RandomString();
-        stringHandler();
+        // RandomString();
+        // stringHandler();
+        stringCompare();
     }
 
     protected static void RandomString() {
@@ -39,4 +42,17 @@ public class StringTraining {
         System.out.println("in ra ký hiệu ASCII tại ký tự ở index = " + s1.codePointAt(2));
         System.out.println("khoảng cách ký tự ASCII từ  = " + s1.codePointCount(2, 5));
     }
+
+    private static void stringCompare() {
+        String s = "AC";
+        String s2 = "E";
+        System.out.println(Integer.toHexString(s.charAt(0)));
+        System.out.println(Integer.toHexString(s.charAt(1)));
+        System.out.println(s.compareTo("E"));
+        System.out.println(Integer.toHexString(s2.charAt(0)));
+        System.out.println(s.compareToIgnoreCase("ac"));
+
+        
+    }
 }
+

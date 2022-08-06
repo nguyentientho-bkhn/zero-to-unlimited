@@ -5,13 +5,13 @@ import nguyentientho.design_pattern.builder.model.OrderType;
 import nguyentientho.design_pattern.builder.model.SauceType;
 import nguyentientho.design_pattern.builder.model.VegetableType;
 
-public class OrderProduct {
+public class Product {
     private OrderType orderType;
     private BreadType breadType;
     private SauceType sauceType;
     private VegetableType vegetableType;
 
-    public OrderProduct(OrderType orderType, BreadType breadType, SauceType sauceType, VegetableType vegetableType) {
+    public Product(OrderType orderType, BreadType breadType, SauceType sauceType, VegetableType vegetableType) {
         super();
         this.orderType = orderType;
         this.breadType = breadType;

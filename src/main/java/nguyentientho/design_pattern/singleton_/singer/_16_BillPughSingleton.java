@@ -11,4 +11,8 @@ public class _16_BillPughSingleton {
     public static _16_BillPughSingleton getInstance() {
         return SingletonHelper.INSTANCE;
     }
+
+    public static void main(String[] args) {
+        _16_BillPughSingleton instance = SingletonHelper.INSTANCE;
+    }
 }

@@ -2,7 +2,7 @@ package nguyentientho.design_pattern.builder;
 
 import nguyentientho.design_pattern.builder.model.*;
 
-public class FastFoodOrderBuilder implements OrderBuilder {
+public class OrderBuilderImpl implements OrderBuilder {
 
     private OrderType orderType;
     private BreadType breadType;
@@ -34,8 +34,8 @@ public class FastFoodOrderBuilder implements OrderBuilder {
     }
 
     @Override
-    public OrderProduct build() {
-        return new OrderProduct(orderType, breadType, sauceType, vegetableType);
+    public Product build() {
+        return new Product(orderType, breadType, sauceType, vegetableType);
     }
 
 }

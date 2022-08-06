@@ -1,10 +1,16 @@
 package nguyentientho.design_pattern.builder;
 
+import nguyentientho.design_pattern.builder.model.BreadType;
+import nguyentientho.design_pattern.builder.model.OrderType;
+import nguyentientho.design_pattern.builder.model.VegetableType;
+
 public class ClientMain {
     public static void main(String[] args) {
-        Order order = new FastFoodOrderBuilder()
-                .orderType(OrderType.ON_SITE).orderBread(BreadType.CHICKEN)
-                .orderSauce(SauceType.SOY_SAUCE).build();
-        System.out.println(order);
+        Product product = new OrderBuilderImpl()
+                .orderType(OrderType.ON_SITE)
+                .orderBread(BreadType.CHICKEN)
+                .orderVegetable(VegetableType.SALAD)
+                .build();
+        System.out.println(product);
     }
 }

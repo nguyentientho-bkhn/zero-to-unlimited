@@ -6,6 +6,6 @@ public class MyThread2 extends Thread{
 
     @Override
     public void run() {
-        SyncInitSingleton3.getInstance3("Thread 2");
+        SyncInitSingleton.getInstance("Thread 2");
     }
 }
