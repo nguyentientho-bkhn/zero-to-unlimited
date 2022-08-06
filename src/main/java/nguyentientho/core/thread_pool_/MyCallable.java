@@ -3,7 +3,7 @@ package nguyentientho.core.thread_pool_;
 import java.util.concurrent.Callable;
 
 public class MyCallable implements Callable<String> {
-    private String name;
+    private final String name;
 
     public MyCallable(String name) {
         this.name = name;

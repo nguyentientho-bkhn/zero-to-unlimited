@@ -4,8 +4,8 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 
 public class CallableWorker implements Callable<Integer> {
-    private int num;
-    private Random random;
+    private final int num;
+    private final Random random;
 
     public CallableWorker(int num) {
         this.num = num;

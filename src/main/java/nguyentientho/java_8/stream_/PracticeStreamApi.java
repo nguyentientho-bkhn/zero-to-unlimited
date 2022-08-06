@@ -20,7 +20,7 @@ public class PracticeStreamApi {
     private static void withStream() {
         List<Integer> list = Arrays.asList(5, 7, 2, 6, 10, 8);
         long count = list.stream().filter(num -> num % 2 == 0).count();
-        System.out.printf("there are %d elements of list");
+        System.out.printf("there are %d elements of list ", count);
     }
 
 

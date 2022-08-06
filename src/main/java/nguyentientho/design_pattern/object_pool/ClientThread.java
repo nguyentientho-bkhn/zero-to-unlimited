@@ -1,5 +1,7 @@
 package nguyentientho.design_pattern.object_pool;
 
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -30,6 +32,11 @@ public class ClientThread implements Runnable {
     }
 
     public static int randInt(int min, int max) {
-        return new Random().nextInt((max - min) + 1) + min;
+        try {
+            return SecureRandom.getInstanceStrong().nextInt((max - min) + 1) + min;
+        } catch (NoSuchAlgorithmException e) {
+            e.getLocalizedMessage();
+        }
+        return 0;
     }
 }

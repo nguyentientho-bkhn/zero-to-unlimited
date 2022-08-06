@@ -1,7 +1,7 @@
 package nguyentientho.core.thread_pool_;
 
 public class MyRunnable implements Runnable {
-    private String taskName;
+    private final String taskName;
 
     public MyRunnable(String taskName) {
         this.taskName = taskName;

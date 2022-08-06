@@ -21,7 +21,7 @@ import java.util.*;
  * %t: Định dạng ngày / giờ
  * %%: Dấu phần trăm
  * \%: Dấu phần trăm
- **/
+ */
 public class Sort {
     public static void main(String[] args) {
 

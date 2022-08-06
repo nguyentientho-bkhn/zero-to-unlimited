@@ -4,25 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Fruits {
-    private List<String> FruitsList;
+    private List<String> fruitsList;
 
     public Fruits(List<String> fruitsList) {
-        FruitsList = fruitsList;
+        this.fruitsList = fruitsList;
     }
 
     public Fruits(Fruits fruits) {
-        List<String> fl = new ArrayList<>();
-        for (String e : fruits.getFruitsList()) {
-            fl.add(e);
-        }
-        this.FruitsList = fl;
+        this.fruitsList = new ArrayList<>(fruits.getFruitsList());
     }
 
     public List<String> getFruitsList() {
-        return FruitsList;
+        return fruitsList;
     }
 
     public void setFruitsList(List<String> fruitsList) {
-        FruitsList = fruitsList;
+        this.fruitsList = fruitsList;
     }
 }

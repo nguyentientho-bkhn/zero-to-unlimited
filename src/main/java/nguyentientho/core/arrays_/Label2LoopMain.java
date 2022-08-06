@@ -9,17 +9,16 @@ public class Label2LoopMain {
     }
 
     private static void loopWithLabel(int[][] inputArr) {
-        mang2Chieu:
-        for (int i = 0; i < inputArr.length; i++) {
+        for (int[] ints : inputArr) {
             boolean allPositive = true;
-            for (int j = 0; j < inputArr[i].length; j++) {
-                if (inputArr[i][j] < 0) {
+            for (int anInt : ints) {
+                if (anInt < 0) {
                     allPositive = false;
-                    continue mang2Chieu;
+                    break;
                 }
             }
             if (allPositive) {
-                System.out.println("Processing " + Arrays.toString(inputArr[i]));
+                System.out.println("Processing " + Arrays.toString(ints));
             }
         }
     }

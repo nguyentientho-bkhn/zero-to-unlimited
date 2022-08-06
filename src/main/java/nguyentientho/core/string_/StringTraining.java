@@ -1,17 +1,18 @@
 package nguyentientho.core.string_;
 
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.util.Random;
 
-import javax.management.monitor.StringMonitor;
 public class StringTraining {
     
-    public static void main(String[] args) {
-        // RandomString();
-        // stringHandler();
+    public static void main(String[] args) throws Exception {
+         randomString();
+         stringHandler();
         stringCompare();
     }
 
-    protected static void RandomString() {
+    protected static void randomString() throws NoSuchAlgorithmException {
         String[] wordListOne = {"24/7", "multi-Tier","30,OOO foot", "B-to-B" ,"win-win" , "front-end" ,
                 "web-based" , "pervasive", "smart", "six-sigma", "critical-path" , "dynamic"};
 
@@ -26,7 +27,7 @@ public class StringTraining {
         int twoLength = wordListTwo.length;
         int threeLength = wordListThree.length;
 
-        Random random = new Random();
+        Random random = SecureRandom.getInstanceStrong();
 
         int ran1 = random.nextInt(oneLength);
         int ran2 = random.nextInt(twoLength);

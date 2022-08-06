@@ -19,9 +19,7 @@ public class CallableThreadExecutorsExam {
             future = executorService.submit(callable);
             callableList.add(future);
         }
-//        executorService.shutdown();
-//        while (!executorService.isTerminated()) {
-//        }
+        executorService.shutdown();
         int sum = 0;
         for (Future<Integer> integerFuture : callableList) {
             try {
@@ -36,8 +34,6 @@ public class CallableThreadExecutorsExam {
             }
         }
         executorService.shutdown();
-        while (!executorService.isTerminated()) {
-        }
         System.out.println("finished all thread: \n Sum all = " + sum);
     }
 }

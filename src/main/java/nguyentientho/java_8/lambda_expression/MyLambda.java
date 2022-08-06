@@ -2,6 +2,7 @@ package nguyentientho.java_8.lambda_expression;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class MyLambda {
@@ -15,12 +16,12 @@ public class MyLambda {
         System.out.println("chưa sort" + languageList);
 
         // viết theo lớp ẩn danh
-/*        Collections.sort(languageList, new Comparator<String>() {
+        languageList.sort(new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
                 return o1.compareTo(o2);
             }
-        });*/
+        });
 
         // viết theo lambda
         Collections.sort(languageList, (String o1, String o2) -> o1.compareTo(o2));

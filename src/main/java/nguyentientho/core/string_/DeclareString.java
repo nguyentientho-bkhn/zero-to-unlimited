@@ -51,6 +51,7 @@ package nguyentientho.core.string_;
         43	String toUpperCase()	Chuyển tất cả các ký tự của chuỗi này sang chữ hoa, sử dụng miền địa phương mặc định (default locale)
         44	String toUpperCase(Locale locale)	Chuyển tất cả các ký tự của chuỗi này sang chữ hoa, sử dụng miền địa phương (locale) cho trước.
         45	String trim()	Trả về một String mới, sau khi loại bỏ các ký tự trắng (whitespace) bên trái và bên phải.
-        46	static String valueOf(primitive data type x)	Returns the string representation of the passed data type argument. */
+        46	static String valueOf(primitive data type x)	Returns the string representation of the passed data type argument.
+ */
 public interface DeclareString {
 }

@@ -1,15 +1,12 @@
 package nguyentientho.oop;
 
 public class Counter {
-	static int count = 0;
+	private static int count = 0;
 	
-	public void visit() {
+	public static void visit() {
 		count++;
-		this.print();
-	}
-
-	public void print() {
 		System.out.println("Couter = " + count);
+
 	}
 
 	public static void main(String[] args) {

@@ -7,16 +7,16 @@ public class LambdaExpression3 {
         T convert (F from);
     }
 
-    public void testScope() {
-        Converter<Integer, String> stringConverter = from -> {
-            outerStaticNum = 1;
-            return String.valueOf(from);
-        };
-        Converter<Integer, String> stringConverter2 = from -> {
-            outerNum = 1;
-            return String.valueOf(from);
-        };
-    }
+//    public void testScope() {
+//        Converter<Integer, String> stringConverter = from -> {
+//            outerStaticNum = 1;
+//            return String.valueOf(from);
+//        };
+//        Converter<Integer, String> stringConverter2 = from -> {
+//            outerNum = 1;
+//            return String.valueOf(from);
+//        };
+//    }
 
     public static void main(String[] args) {
         doThing1();

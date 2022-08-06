@@ -19,12 +19,12 @@ public class CreateData {
         System.out.println("biến thay đổi chỉ trong method = " + ixchange + "--" + iyChange);
     }
 
+    /**
+     * Khi 1 object được tạo nó sẽ được lưu trong HEAP và biến tham chiếu của nó createData sẽ được lưu trong STACK
+     * và biến createData này sẽ chứa địa chỉ ô nhớ của đối tượng được lưu trong HEAP
+     * Vì vậy khi 1 hàm được gọi truyền giá trị vào chính là truyền địa chỉ ô nhớ của đối tượng trong HEAP
+     */
     public static void main (String[] args) {
-        /**
-         * Khi 1 object được tạo nó sẽ được lưu trong HEAP và biến tham chiếu của nó createData sẽ được lưu trong STACK
-         * và biến createData này sẽ chứa địa chỉ ô nhớ của đối tượng được lưu trong HEAP
-         * Vì vậy khi 1 hàm được gọi truyền giá trị vào chính là truyền địa chỉ ô nhớ của đối tượng trong HEAP
-         */
         CreateData createData = new CreateData();
         System.out.println("Đối tượng TRƯỚC khi gọi hàm changeData " + createData.x + "-" + createData);
         changeData(createData.x, createData.x);
