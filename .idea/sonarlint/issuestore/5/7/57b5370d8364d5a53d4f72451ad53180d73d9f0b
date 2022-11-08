@@ -1,0 +1,11 @@
+
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ÕŒøÕ8¬†·0
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(šÜò‚
+~
+java:S3008"aRename this field "EAGER_INIT_SINGLETON_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±çùÖ8²†·0
+]	java:S125"<This block of commented-out lines of code should be removed.(´¡”üÿÿÿÿ8—Æ¸0
+W	java:S125"<This block of commented-out lines of code should be removed.(û8Äü·0
+X	java:S125"<This block of commented-out lines of code should be removed.(³Öâ©8éª¸0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Õû€Ü8¼†·0
+N
+java:S1068",Remove this unused "INSTANCE" private field.(áÏÇ–üÿÿÿÿ8›Æ¸0
